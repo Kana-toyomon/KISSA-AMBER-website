@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+.first-view {
+  height: calc(100vh - 110px);
+  background-image: url(../images/index/first-view.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 60px;
+  color: #ede0c5;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(200, 180, 140, 0.4);
+  text-align: center;
+}
+
+.first-view-text h1 {
+  font-family: "HG明朝E", Garamond;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: right;
+}
+
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.lead p {
+  line-height: 2;
+  text-align: center;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-button {
+  background-color: #d8b500;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: "HG明朝E", Garamond;
+  font-size: 14px;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 1px rgba(115, 53, 32, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #bf4904;
+}
+
+.recommended {
+  background-color: #ede0c5;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+
+.recommended h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.recommended h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #bf4904;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-list {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  overflow: scroll;
+}
+
+.item-list li {
+  flex-shrink: 0;
+  width: 260px;
+  margin-left: 75px;
+}
+
+.item-list li:first-child {
+  margin-left: 0;
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.item-list .price {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .first-view {
+    height: calc(100vh - 50px);
+    background-image: url(../images/common/sp-first-view.jpg);
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    /* 横方向も中央に */
+    align-items: center;
+  }
+
+  .first-view-text {
+    padding: 0;
+    text-shadow: 2px 2px 2px rgba(60, 40, 20, 0.7);
+  }
+
+  .first-view-text h1 {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .first-view-text p {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .lead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lead p {
+    text-align: left;
+  }
+
+  .item-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-list li {
+    width: 220px;
+    margin-left: 30px;
+  }
+}
